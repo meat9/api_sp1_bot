@@ -30,7 +30,7 @@ def get_homework_statuses(current_timestamp):
 
 def send_message(message):
     bot = telegram.Bot(token=TELEGRAM_TOKEN)
-    return bot.send_message(chat_id = CHAT_ID, text = parse_homework_status)
+    return bot.send_message(chat_id = CHAT_ID, text = message)
 
 
 def main():
