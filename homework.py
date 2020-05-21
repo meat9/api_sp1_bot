@@ -32,12 +32,12 @@ def send_message(message):
     bot = telegram.Bot(token=TELEGRAM_TOKEN)
     return bot.send_message(chat_id = CHAT_ID, text=message)
 
-def send_message2(message):
+def send_message2():
     bot = telegram.Bot(token=TELEGRAM_TOKEN)
     bot.send_message(chat_id = CHAT_ID, text='123456')
     
 
-send_message2('message')
+send_message2()
 
 def main():
     current_timestamp = int(time.time())  # начальное значение timestamp
