@@ -35,7 +35,8 @@ def send_message(message):
 
 def main():
     current_timestamp = int(time.time())  # начальное значение timestamp
-    
+    bot = telegram.Bot(token=TELEGRAM_TOKEN)
+    bot.send_message(chat_id=CHAT_ID, text='Бот начал что-то делать')
 
     while True:
         try:
